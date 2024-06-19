@@ -152,7 +152,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -170,19 +169,22 @@ section {
   align-items: center;
   gap: 5rem;
   height: 80vh;
+  text-align: center;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  justify-content: center;
+  align-items: center;
   margin: auto 0;
 }
 
 .section__text {
-  align-self: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__text p {
