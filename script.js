@@ -5,6 +5,25 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
+const projectsRow = document.querySelector('.projects-row');
+let scrollAmount = 0;
+document.querySelector('.left-arrow').addEventListener('click', scrollLeft);
+function scrollLeft() {
+  scrollAmount -= projectsRow.clientWidth / 3;
+  if (scrollAmount < 0) {
+    scrollAmount = 0;
+  }
+  projectsRow.style.transform = `translateX(-${scrollAmount}px)`;
+}
+  
+function scrollRight() {
+  scrollAmount += projectsRow.clientWidth / 3;
+  if (scrollAmount > projectsRow.scrollWidth - projectsRow.clientWidth) {
+  scrollAmount = projectsRow.scrollWidth - projectsRow.clientWidth;
+  }
+  projectsRow.style.transform = `translateX(-${scrollAmount}px)`;
+}
+
   document.addEventListener("DOMContentLoaded", function() {
     const typedText = document.getElementById("typed-text");
     const jobTitles = ["Frontend Developer", "Full Stack Developer", "Cloud Engineer", "Android Developer"];
@@ -72,25 +91,33 @@ function toggleMenu() {
   
   const education = [
       {
-          degree: "Degree 1",
-          institution: "Institution 1, Location",
-          duration: "Duration 1",
+          degree: "Master Of Science In Information Systems",
+          institution: "Northeastern University, Boston, USA",
+          duration: "September'23 - May'24",
           details: [
-              "Detail 1",
-              "Detail 2",
-              "Detail 3"
+              "CGPA: 3.56/4.00",
+              "Coursework: Web design, Application Engineer and Dev, Database Design and Data Management, User Experience Design/Testing, Agile Software Development, Cloud Computing, Program structures and Algorithm, Software Quality control and management"
           ]
       },
       {
-          degree: "Degree 2",
-          institution: "Institution 2, Location",
-          duration: "Duration 2",
+          degree: "Master Of Engineering In Communication Systems",
+          institution: "Shantilal Shah Engineering College, India",
+          duration: "May'19 - May'21",
           details: [
-              "Detail 1",
-              "Detail 2",
-              "Detail 3"
+              "CGPA: 8.63/10.00",
+              "Courses: Advance Image Processing, Statistical Information Processing, PatternRecognition and Machine Learning, Computer Vision",
+              "Thesis: Performance Analysis and Quality Enhancement of Fight Detection Using Deep Learning for Video Surveillance"
           ]
-      }
+      },
+      {
+        degree: "BE In Electronics and Communication Engineering",
+        institution: "Government Engineering College, India",
+        duration: "May'14 - May'18",
+        details: [
+            "CGPA: 9.10/10.00",
+            "Courses: Courses: Computer Engineering and Utilization, Vector Calculus and Linear Algebra, Engineering Graphics, Microcontroller and Interfacing, Digital Signal Processing, VLSI Technology Design, Computer Networking, Statistical Methods for Computer Science"
+        ]
+    }
   ];
   
   function renderExperience(index) {
@@ -136,4 +163,9 @@ function toggleMenu() {
   // Initialize the first entries
   renderExperience(currentExperienceIndex);
   renderEducation(currentEducationIndex);
+
+
+
+
+  
     

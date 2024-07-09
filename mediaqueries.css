@@ -2,13 +2,11 @@
   #profile {
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
     height: 80vh;
     gap: 2rem;
     text-align: center;
-  }
-  
+  }  
   .section__pic-container {
     display: flex;
     justify-content: center;
@@ -16,8 +14,7 @@
     height: 200px;
     width: 200px;
     margin: auto;
-  }
-  
+  }  
   .section__text {
     display: flex;
     flex-direction: column;
@@ -25,6 +22,32 @@
     align-items: center;
     width: 100%;
     max-width: 600px;
+  }
+  section {
+    margin: 0 2rem;
+  }
+  #about {
+    margin-top: 14vh;
+    height: 80vh;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .about-details-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .details-container-outer {
+    width: 400px;
+    margin: 1rem 0rem;
+  }
+  .degree, .institution {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -51,7 +74,8 @@
     display: none;
   }
   #about {
-    margin-top: 14vh;
+    margin-top: 16vh;
+    height: 85vh;
   }
   section,
   .section-container {
@@ -77,15 +101,32 @@
   .about-containers {
     margin-top: 0;
   }
+  .about-details-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .details-container-outer {
+    width: 320px;
+    margin: 1rem 0rem;
+  }
+  .degree, .institution {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #profile {
-    height: 80vh;
+    height: 78vh;
     gap: 0.5rem;
   }
   #about {
-    padding-top: 14vh;
+    padding-top: 4vh;
+    height: 95vh;
   }
   nav {
     height: 14vh;
@@ -109,6 +150,23 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+  .about-details-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .details-container-outer {
+    width: 305px;
+    margin: 1rem 0rem;
+  }
+  .degree, .institution {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .contact-info-container {
     margin: 0;
