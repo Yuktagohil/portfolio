@@ -147,3 +147,548 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 80vh;
+  text-align: center;
+}
+
+.section__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.about-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.details-container-outer{
+  position: relative;
+  overflow: hidden; 
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  width: 750px;
+  flex: 1 1 45%;
+  margin: 1rem;
+  background: white;
+  text-align: center;
+}
+
+.details-container-outer:hover {
+  background-color:rgb(245, 245, 245);
+}
+
+.details-container {
+  height: 350px;
+  overflow-y: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details-container .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.details-container .arrow.left {
+  left: 10px;
+}
+
+.details-container .arrow.right {
+  right: 10px;
+}
+
+.experience-content, .education-content {
+  display: none;
+}
+
+.experience-content.active, .education-content.active {
+  display: block;
+}
+
+.company, .degree, .institution, .duration, .position {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.details-list {
+  list-style-type: disc;
+  margin-left: 5rem;
+  /* margin-right: 4rem; */
+  margin-top: 2rem;
+  text-align: justify;
+  width: 398px;
+}
+
+.details-container h3 {
+  margin-bottom: 1rem;
+}
+
+.details-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.details-container:hover::-webkit-scrollbar {
+  width: 8px; 
+  
+}
+
+.details-container::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 2rem;
+}
+
+.details-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.details-container::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 2rem;
+}
+
+.details-container:hover .arrow {
+  display: block;
+}
+
+.details-container .arrow {
+  display: none;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* SKILLS SECTION */
+#skills {
+  position: relative;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0; /* Add padding to create space above and below */
+  box-sizing: border-box;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  flex: 0 0 22%;
+  margin: 10px 0; /* Add margin to create space between skill items */
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.skill-name {
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+/* PROJECTS SECTION */
+#projects {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+.projects-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  padding-bottom: 1rem; /* Add padding for scrollbar visibility */
+}
+
+.projects-wrapper:hover {
+  overflow-x: auto;
+  overflow-y: hidden; /* Ensure vertical scrollbar is hidden */
+}
+
+.projects-row {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2rem;
+}
+
+.projects-details-container {
+  flex: 0 0 31.1111%; /* 3 projects in a row */
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Ensures space between elements */
+  height: 100%; /* Ensures it takes up the full height of the container */
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  border-radius: 2rem;
+  background: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: auto; /* Ensures the image scales properly */
+}
+
+.tech-stack {
+  color: gray;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+  text-align: center; /* Centers the text */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+  margin: 0.5rem;
+}
+
+.arrow {
+  display: none; /* Hide the arrows */
+}
+
+.projects-wrapper:hover .arrow {
+  display: none; /* Ensure arrows remain hidden on hover */
+}
+
+/* Custom scrollbar styles */
+.projects-wrapper::-webkit-scrollbar {
+  height: 8px;
+  display: none; /* Hide scrollbar by default */
+}
+
+.projects-wrapper:hover::-webkit-scrollbar {
+  display: block; /* Show scrollbar on hover */
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 4px;
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.projects-wrapper::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+/* Certifications Section */
+#certifications {
+  padding: 60px 0;
+}
+
+#certifications .section__text__p1 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#certifications .title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.certification-details-container {
+  flex: 0 0 31.1111%; /* 3 certifications in a row */
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; /* Ensures space between elements */
+  height: 100%; /* Ensures it takes up the full height of the container */
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  border-radius: 2rem;
+  background: rgb(250, 250, 250);
+}
+
+.certificate-img {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto; /* Ensures the image scales properly */
+}
+
+.certification-title {
+  margin: 1rem 0;
+  color: black;
+  text-align: center;
+  align-self: center; /* Aligns the text to the left */
+}
+
+.certification-link {
+  font-size: 18px;
+  color: #007BFF;
+  text-decoration: none;
+  text-align: left;
+  align-self: center; /* Aligns the text to the left */
+}
+
+.certification-link:hover {
+  text-decoration: underline;
+}
+
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}

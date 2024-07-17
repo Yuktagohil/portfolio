@@ -1,49 +1,414 @@
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+  #profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 80vh;
+    gap: 2rem;
+    text-align: center;
+  }  
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }  
+  .section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  section {
+    margin: 0 2rem;
+  }
+  #about {
+    margin: 5% 5%;
+    height: unset;
+  }
+  #skills {
+    height: unset;
+    margin: 20% 5%;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .about-details-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: unset;
+  }
+  .details-container-outer {
+    width: 800px;
+    margin: 2rem 0rem;
+
+  }
+  .details-list {
+    width: 650px;
+  }
+  .degree, .institution {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .projects-details-container {
+    flex: 0 0 48%;
+  }
+  .btn-container{
+    justify-content: center;
+  }
+  .certification-details-container {
+    flex: 0 0 50%;
+  }
+  .certifications-container {
+    padding: unset;
+  }
+  #certifications {
+    margin: 10% 5%;;
+  }
+  #contact {
+    margin: 5% 5%;
+  }
+  .tech-stack {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  #skills {
+    margin: -7% 5%;
+    height: unset;
+  }
+  #projects {
+    margin: 17% 5%;
+  }
+  .project-btn {
+    font-style: bold;
+    font-size: large;
+  }
+  #projects .projects-container .arrow {
+    display: none; 
+  }
+  .arrow {
+    display: none;
+  }
+  #about {
+    margin: 15% 5%;
+    height: unset;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+  .projects-details-container {
+    flex: 0 0 100%;
+  }
+  .section__pic-container img {
+    width: 70%; /* Ensure the image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Ensure the maximum width is 200px */
+    max-height: 200px;
+  }
+  .section__text {
+    width: 90%;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .about-details-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: unset;
+  }
+  .details-container-outer {
+    width: 600px;
+    margin: 2rem 0rem;
+  }
+  .details-list {
+    width: 450px;
+  }
+  .degree, .institution {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #projects .projects-container .projects-wrapper .projects-row .projects-details-container .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical center alignment */
+    align-items: center; /* Horizontal center alignment */
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .certification-details-container {
+    flex: 0 0 100%;
+  }
+  .certifications-container {
+    padding: unset;
+  }
+  #certifications {
+    margin: -20% 5%;;
+  }
+  #contact {
+    margin: 9% 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    height: 78vh;
+    gap: 0.5rem;
+  }
+  #about {
+    margin: 35% 5%;
+    height: unset;
+  }
+  #projects {
+    margin: 45% 5%;
+    padding: 0 0;
+  }
+  #contact {
+    margin-top: 41%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+  }
+  #certifications {
+    padding: 0 0;
+    padding-top: unset;
+    margin: -20% 5%;
+  }
+  nav {
+    height: 14vh;
+  }
+  .icon {
+    height: 2rem;
+    margin-top: 0px;
+  }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .about-details-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .details-list {
+    margin-left: 4rem;
+    width: 190px;
+  }
+  .projects-row {
+    margin-top: 20px;
+    gap: 2rem;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .details-container-outer {
+    width: 305px;
+    margin: 1rem 0rem;
+  }
+  .projects-details-container{
+    flex: 0 0 100%; /* 3 projects in a row */
+  }
+  .projects-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0rem;
+  }
+  .project-img {
+    border-radius: 2rem;
+    width: 100%;
+    height: 30vh;
+}
+  .tech-stack {
+    color: gray;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #projects .projects-container .projects-wrapper .projects-row .projects-details-container .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Ensure buttons do not wrap */
+  }
+  .project-title {
+    margin: 10px;
+  }
+
+  .degree, .institution {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+  .section__pic-container img {
+    width: 70%; /* Ensure the image takes full width of the container */
+    height: auto;
+    max-width: 200px; 
+    max-height: 200px; 
+    object-fit: cover; 
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .section__text {
+    width: 90%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  #skills {
+    margin: -30% 5%;
+  }
+  .skills-container {
+    padding: 0 0;
+  }
+  .skill-item {
+    flex: 0 0 50%;
+  }
+  .projects-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    padding-bottom: 1rem; /* Add padding for scrollbar visibility */
   }
   
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  .projects-wrapper:hover {
+    overflow-x: auto;
+    overflow-y: hidden; /* Ensure vertical scrollbar is hidden */
   }
-  
+  /* Custom scrollbar styles */
+.projects-wrapper::-webkit-scrollbar {
+  height: 8px;
+  display: none; /* Hide scrollbar by default */
+}
+
+.projects-wrapper:hover::-webkit-scrollbar {
+  display: block; /* Show scrollbar on hover */
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 4px;
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.projects-wrapper::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.certification-details-container {
+  flex: 0 0 100%;
+}
+.certifications-container {
+  padding: unset;
+}
+.contact-info-upper-container {
+  height: 500px;
+}
+}
+
+@media screen and (max-width: 600px) and (min-height: 840px) {
+  #about {
+    margin: 20% 5%;
+    height: unset;
+  }
+  #skills {
+    margin: -40% 5%;
+  }
+  #contact {
+    margin-top: 28%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 22%;
+  }
+  #projects {
+    margin: 40% 5%;
+  }
+  #certifications {
+    margin: -10% 5%;
+  }
+  .contact-info-upper-container {
+    height: 100px;
+}
+}
